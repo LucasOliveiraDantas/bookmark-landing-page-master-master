@@ -94,6 +94,10 @@ a {
   }
 
   /*___________________________*/
+  html.sr .load-hidden {
+    visibility: hidden;
+  }
+
   .home {
     display: flex;
     flex-direction: column;

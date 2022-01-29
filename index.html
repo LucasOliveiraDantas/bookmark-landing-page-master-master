@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head >
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
@@ -10,6 +10,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
     <!--title-->
     <title>Frontend Mentor | Bookmark landing page</title>
     <!--css-->
@@ -51,7 +52,7 @@
       </nav>
     </header>
     <main>
-      <section class="home">
+      <section class="home load-hidden">
         <div class="bg-home"></div>
         <img
           class="img-home"
@@ -245,6 +246,17 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+    
+    <script>
+      ScrollReveal().reveal('.home', { duration: 1000, reset: true })
+      ScrollReveal().reveal('.features', { duration: 1000, reset: true, origin: top })
+      ScrollReveal().reveal('.bookmarking', { duration:1000, reset: true})
+      ScrollReveal().reveal('.extension', { duration: 1000, reset: true })
+      ScrollReveal().reveal('.asked-question', { duration: 1000, reset: true})
+      ScrollReveal().reveal('.login', { duration: 1000, reset: true})
+
+
+    </script>
     <script src="main.js"></script>
   </body>
 </html>
