@@ -438,7 +438,7 @@ a {
 @media screen and (max-width: 360px){
     .btn-home a {
     text-decoration: none;
-    padding: 1rem 1rem;
+    padding: 1rem 0.8rem;
     border-radius: 0.3rem;
     font-size: 14px;
     font-weight: 500;
