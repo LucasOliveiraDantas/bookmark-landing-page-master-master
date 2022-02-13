@@ -89,7 +89,7 @@ a {
     margin-top: 1rem;
   }
   .midias-menu {
-    margin-top: 15rem;
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -421,7 +421,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
   }
   .menu-footer {
     margin-top: 2rem;
@@ -443,7 +442,7 @@ a {
   }
   .midias {
     display: flex;
-
+    margin-top: 2.5rem;
     gap: 2.5rem;
   }
 }
