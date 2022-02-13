@@ -7,3 +7,11 @@ for (const btn of buttom) {
     menu.classList.toggle('show')
   })
 }
+
+const menuLinks = document.querySelectorAll('.menu-links .links')
+
+for (const menuL of menuLinks) {
+  menuL.addEventListener('click', function () {
+    menu.classList.remove('show')
+  })
+}
