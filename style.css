@@ -421,6 +421,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
   }
   .menu-footer {
     margin-top: 2rem;
@@ -442,7 +443,7 @@ a {
   }
   .midias {
     display: flex;
-    margin-top: 2.5rem;
+
     gap: 2.5rem;
   }
 }
