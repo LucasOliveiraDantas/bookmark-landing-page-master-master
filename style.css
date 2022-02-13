@@ -187,7 +187,15 @@ a {
     color: hsl(229, 8%, 60%);
     font-weight: 400;
   }
+  .marker-1.active {
+    border-bottom: 4px solid hsl(0, 94%, 66%);
+    color: hsl(229, 31%, 21%);
+  }
   /*______________________________*/
+  .bookmarking.tab-2,
+  .bookmarking.tab-3 {
+    display: none;
+  }
   .bookmarking {
     display: flex;
     flex-direction: column;
@@ -583,14 +591,27 @@ a {
     width: 210px;
     cursor: pointer;
   }
-  .marker:hover {
+  .marker.off:hover {
     color: hsl(0, 94%, 66%);
   }
-  .marker-1 {
+  .marker-1,
+  .marker-2,
+  .marker-3 {
+    border-bottom: 4px solid hsl(0, 0%, 100%);
+    color: hsl(229, 8%, 60%);
+  }
+  .marker-1:hover,
+  .marker-2:hover,
+  .marker-3:hover {
     border-bottom: 4px solid hsl(0, 94%, 66%);
     color: hsl(229, 31%, 21%);
   }
+
   /*______________________________*/
+  .bookmarking.tab-2,
+  .bookmarking.tab-3 {
+    display: none;
+  }
   .bookmarking {
     display: flex;
     flex-direction: row;
@@ -908,6 +929,9 @@ a {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+  }
+  .footer-links:hover {
+    color: hsl(0, 94%, 66%);
   }
   .midias {
     display: flex;
