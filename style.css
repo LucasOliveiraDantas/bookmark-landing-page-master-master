@@ -15,13 +15,7 @@ ul {
 a {
   text-decoration: none;
 }
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+
 :root {
   /* ## Colors ## */
 
@@ -311,11 +305,15 @@ a {
   }
   .marker {
     border-top: 1px solid hsla(229, 8%, 60%, 0.308);
+    border-bottom: 4px solid hsl(0, 0%, 100%);
     padding: 1.2rem;
     color: hsl(229, 8%, 60%);
     font-weight: 400;
   }
-  .marker-1.active {
+
+  .marker-1.active,
+  .marker-2.active,
+  .marker-3.active {
     border-bottom: 4px solid hsl(0, 94%, 66%);
     color: hsl(229, 31%, 21%);
   }
@@ -381,17 +379,42 @@ a {
 }
 /*____________________________________BOokmarking_____*/
 @media screen and (min-width: 360px) {
+  .bookmarking.tab-1,
   .bookmarking.tab-2,
   .bookmarking.tab-3 {
     display: none;
   }
-  .tab-1,
-  .tab-2,
-  .tab-3 {
+  .tab-1.show,
+  .tab-2.show,
+  .tab-3.show {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5rem 2rem;
+  }
+  .tab-2 .bg-bookmark {
+    position: absolute;
+    right: 0;
+    left: 0;
+    content: '';
+    width: 300px;
+    height: 200px;
+    background-color: hsl(231, 69%, 60%);
+    margin-top: 2.2rem;
+    border-radius: 0rem 5rem 5rem 0rem;
+    z-index: 1;
+  }
+  .tab-3 .bg-bookmark {
+    position: absolute;
+    right: 0;
+    left: 0;
+    content: '';
+    width: 300px;
+    height: 200px;
+    background-color: hsl(231, 69%, 60%);
+    margin-top: 2.2rem;
+    border-radius: 0rem 10rem 5rem 0rem;
+    z-index: 1;
   }
   .bg-bookmark {
     position: absolute;
@@ -405,10 +428,21 @@ a {
     border-radius: 0rem 0rem 5rem 0rem;
     z-index: 1;
   }
+  .tab-2 .img-bookmark {
+    height: auto;
+    width: 280px;
+    margin-left: 3.5rem;
+    z-index: 5;
+  }
+  .tab-3 .img-bookmark {
+    height: auto;
+    width: 280px;
+    margin-left: 3rem;
+    z-index: 5;
+  }
   .img-bookmark {
     height: 200.75px;
     width: 311px;
-
     margin-right: 0rem;
     z-index: 5;
   }
