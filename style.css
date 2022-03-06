@@ -43,7 +43,7 @@ a {
     align-items: center;
     margin: 2.5rem 2rem;
   }
-  .img-logo-header{
+  .img-logo-header {
     height: 25px;
     width: 148px;
   }
@@ -105,7 +105,7 @@ a {
   .nav-header {
     margin: 3.5rem 10rem;
   }
-  .img-logo-header{
+  .img-logo-header {
     height: 25px;
     width: 148px;
   }
@@ -160,9 +160,9 @@ a {
 }
 /*____________________________________Home_____*/
 @media screen and (min-width: 360px) {
-  html.sr .load-hidden {
+  /* html.sr .load-hidden {
     visibility: hidden;
-  }
+  } */
 
   .home {
     display: flex;
@@ -372,6 +372,12 @@ a {
     border-bottom: 4px solid hsl(0, 94%, 66%);
     color: hsl(229, 31%, 21%);
   }
+  .marker-1.active,
+  .marker-2.active,
+  .marker-3.active {
+    border-bottom: 4px solid hsl(0, 94%, 66%);
+    color: hsl(229, 31%, 21%);
+  }
 }
 /*____________________________________BOokmarking_____*/
 @media screen and (min-width: 360px) {
@@ -379,7 +385,9 @@ a {
   .bookmarking.tab-3 {
     display: none;
   }
-  .bookmarking {
+  .tab-1,
+  .tab-2,
+  .tab-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -429,15 +437,42 @@ a {
   }
 }
 @media screen and (min-width: 1440px) {
+  .bookmarking.tab-1,
   .bookmarking.tab-2,
   .bookmarking.tab-3 {
     display: none;
   }
-  .bookmarking {
+  .tab-1.show,
+  .tab-2.show,
+  .tab-3.show {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 4rem 10rem;
+  }
+  .tab-2 .bg-bookmark {
+    position: absolute;
+    right: 0;
+    left: 0;
+    content: '';
+    width: 620px;
+    height: 350px;
+    background-color: hsl(231, 69%, 60%);
+    margin-top: 6.55rem;
+    border-radius: 0rem 20rem 18.8rem 0rem;
+    z-index: 1;
+  }
+  .tab-3 .bg-bookmark {
+    position: absolute;
+    right: 0;
+    left: 0;
+    content: '';
+    width: 620px;
+    height: 350px;
+    background-color: hsl(231, 69%, 60%);
+    margin-top: 8.8rem;
+    border-radius: 0rem 20rem 18.8rem 0rem;
+    z-index: 1;
   }
   .bg-bookmark {
     position: absolute;
@@ -450,6 +485,20 @@ a {
     margin-top: 11rem;
     border-radius: 0rem 0rem 13rem 0rem;
     z-index: 1;
+  }
+  .tab-2 .img-bookmark {
+    height: auto;
+    width: 580px;
+    margin-right: 3rem;
+    margin-left: 6rem;
+    z-index: 5;
+  }
+  .tab-3 .img-bookmark {
+    height: auto;
+    width: 580px;
+    margin-right: 3rem;
+    margin-left: 6rem;
+    z-index: 5;
   }
   .img-bookmark {
     height: 346px;
